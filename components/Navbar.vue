@@ -34,30 +34,26 @@
                 >
                   <ul class="block lg:flex">
                     <li class="group">
-                      <router-link to="/" class="mx-8 flex py-2 text-sm text-slate-900 group-hover:text-blue-700 ">
-                        Beranda
-                      </router-link>
+                      <NuxtLink to="/" class="mx-8 flex py-2 text-sm text-slate-900 group-hover:text-blue-700 group-hover:underline  ">
+                        Home
+                      </NuxtLink>
                     </li>
                     <li class="group">
-                      <router-link to="/about" class="mx-8 flex py-2 text-sm text-slate-900 group-hover:text-blue-700  ">
-                        Tentang Saya
-                      </router-link>
+                      <NuxtLink to="/me" class="mx-8 flex py-2 text-sm text-slate-900 group-hover:text-blue-700 group-hover:underline ">
+                        About Me
+                      </NuxtLink>
                     </li>
                     <li class="group">
-                      <router-link to="/portfolio" class="mx-8 flex py-2 text-sm text-slate-900 group-hover:text-blue-700  ">
-                        Portfolio
-                      </router-link>
+                      <NuxtLink to="/project" class="mx-8 flex py-2 text-sm text-slate-900 group-hover:text-blue-700  group-hover:underline">
+                        Project
+                      </NuxtLink>
                     </li>
-                    <li class="group">
-                      <router-link to="/clients" class="mx-8 flex py-2 text-sm text-slate-900 group-hover:text-blue-700  ">
-                        Client
-                      </router-link>
-                    </li>
+                
       
                     <li class="group">
-                      <router-link to="/contact" class="mx-8 flex py-2 text-sm text-slate-900 group-hover:text-blue-700  ">
-                        Kontak
-                      </router-link>
+                      <NuxtLink to="/contact" class="mx-8 flex py-2 text-sm text-slate-900 group-hover:text-blue-700  group-hover:underline">
+                        Contact
+                      </NuxtLink>
                     </li>
                   </ul>
            

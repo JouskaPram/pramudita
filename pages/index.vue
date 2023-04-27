@@ -1,65 +1,11 @@
 <template>
     <div id="main" class="">
         <Navbar/>
-    <section id="home" class="pt-28 ">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-blue-500 md:text-xl">
-              Hello Everyone ✌, 
-              I'm
-              <span
-                class="mt-1 block text-3xl font-bold text-slate-900  lg:text-4xl"
-                >Pramudita
-              </span>
-            </h1>
-            <h2
-              class="mb-5 text-lg font-medium text-slate-900  lg:text-2xl"
-            >
-              Web Developer & <span class="font-dark"> Gamers</span>
-            </h2>
-            <p class="mb-5 font-medium leading-relaxed text-slate-400">
-              I code just for fun & i love it
-            </p>
-            <a
-              href="#contact"
-              class="rounded-full bg-blue-500 py-3 px-8 text-base font-semibold text-white transition duration-300 hover:bg-blue-400 hover:shadow-lg"
-              >Contact Me</a
-            >
-          </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative mt-10 lg:right-0 lg:mt-0">
-              <img
-                src=" c.png"
-                alt=""
-                class="relative z-10 mx-auto max-w-full"
-              />
-              <span
-                class="absolute -bottom-8 left-1/2 -translate-x-1/2 md:scale-x-125"
-              >
-                <svg
-                  width="300"
-                  height="300"
-                  viewBox="0 0 200 200"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="rgb(59 130 246)"
-                    d="M27.5,-39.4C36.6,-36.9,45.7,-30.9,47.4,-22.9C49.1,-14.8,43.5,-4.7,40.1,4.5C36.8,13.6,35.7,21.8,33.1,33.6C30.5,45.5,26.5,61,16.6,70C6.8,79,-8.9,81.4,-18.7,73.9C-28.4,66.3,-32.2,48.7,-39.9,36.5C-47.7,24.2,-59.4,17.2,-65.1,6.7C-70.8,-3.9,-70.6,-18,-64.2,-28.2C-57.8,-38.5,-45.4,-44.9,-33.7,-46.2C-22,-47.6,-11,-43.9,-0.9,-42.5C9.2,-41.1,18.4,-42,27.5,-39.4Z"
-                    transform="translate(100 100)"
-                    
-                  />
-                </svg>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  
     <!-- about me -->
     <AboutMe/>
     <!-- endabout me -->
-        <div class="services section pt-10 container ">
+        <div class="services section pt-10 container pb-10 ">
       <div class=" px-4">
         <h2 class="mb-3 text-lg font-bold uppercase text-blue-500">What I Can Do</h2>
         <p class="text-base font-medium text-slate-500 lg:text-lg  mb-4">
@@ -158,10 +104,58 @@
         </div>
       </div>
     </div>
+    <!-- porfolio -->
+    <div class="section container pt-10 pb-10">
+      <div class="px-4">
+        <h2 class="section-heading mb-4 text-center font-bold text-2xl text-blue-500 ">My Project</h2>
+        <p class="text-center mb-4 text-gray-400 text-md">Take a look at some of my project.</p>
+        <project/>
+        <div class="mt-12 text-center">
+          <NuxtLink
+            to="/project"
+            class="text-gray-800 font-semibold border border-gray-800 py-2 px-5 hover:px-6 rounded-full inline-flex items-center group transform hover:text-primary hover:-translate-y-1 duration-200"
+            >View All Projects
+            <svg
+              class="w-4 h-4 ml-1 transform group-hover:translate-x-2 duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </NuxtLink>
+        </div>
+      </div>
+      </div>
+      <!-- testi card -->
+    
+  <!-- contact -->
+  <div class="pt-16 px-5">
+      <div class="cotainer sm:mt-14 mx-auto max-w-2xl text-center">
+        <h1 class="leading-tight text-slate-700 text-4xl md:text-5xl mb-5">
+          Contact Me here 🚀
+        </h1>
+        <p class="text-sm text-slate-400 md:text-base md:px-12">
+          if you want to interact with me you can use this contact, for whatever it is without exception.
+        </p>
+      </div>
+    </div>
+  <section class="container py-10">
+    <contact/>
+  </section>
+    <!-- footer -->
+    <Footer/>
     </div>
 </template>
 
 <script setup>
+
 
 </script>
 <style>
