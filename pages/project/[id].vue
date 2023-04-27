@@ -2,13 +2,13 @@
     <div id="main">
         <Navbar/>
         <section class="pt-24 pb-10">
-            <div class="container">
+            <div class="container" v-for="d in datas" :key="d.id">
 
-                <div class="group portfolio flex flex-wrap mb-16 align-middle hover:no-underline focus:no-underline">
+                <div class="group portfolio flex flex-wrap mb-16 align-middle hover:no-underline focus:no-underline" >
         <!-- di gunain di page project -->
         <div class="w-full md:w-6/12 relative h-52 md:h-96">
           <img 
-            src="../../public/WhatsApp Image 2023-04-22 at 00.21.39.jpeg"
+            :src="d.img"
             class="absolute object-cover w-full h-full rounded-2xl transform duration-200 group-hover:-translate-y-2 group-hover:shadow-xl"
           />
         </div>
@@ -16,12 +16,12 @@
           <h3
             class="text-2xl md:text-4xl font-normal leading-tight group-hover:underline text-slate-800"
           >
-           ItClub Smkn 4 Portfolio
+           {{ d.nama }}
           </h3>
-          <p class="mt-2 mb-4 text-base text-slate-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident esse accusantium animi ab quos veritatis error iure nemo ad quidem?</p>
+          <p class="mt-2 mb-4 text-base text-slate-500">{{ d.deskripsi }}</p>
           <!-- <div class="mt-5" ></div> -->
-          <nuxt-link
-            
+          <a
+            :href="d.github"
             class="mt-5 text-slate-800   inline-flex items-center group-hover:underline duration-200"
           >
             View Project
@@ -37,7 +37,7 @@
               <path d="M5 12h14"></path>
               <path d="M12 5l7 7-7 7"></path>
             </svg>
-          </nuxt-link>
+          </a>
         </div>
         </div>
         <!-- info -->
@@ -65,7 +65,7 @@
 
                 <h4 class="font-bold ml-2 text-slate-800">Type Project</h4>
               </div>
-              <p class="font-medium text-slate-700 text-lg">WebApp</p>
+              <p class="font-medium text-slate-700 text-lg">{{d.type }}</p>
             </div>
             <div class="info-box p-5 rounded-lg bg-gray-100 ">
               <div class="flex items-center mb-2">
@@ -86,7 +86,7 @@
 
                 <h4 class="font-bold ml-2 text-slate-800">Source</h4>
               </div>
-              <a class="font-medium text-slate-700 text-lg underline">github</a>
+              <a :href="d.github" class="font-medium text-slate-700 text-lg underline">github</a>
             </div>
             <div class="info-box p-5 rounded-lg bg-gray-100 ">
               <div class="flex items-center mb-2">
@@ -106,7 +106,7 @@
                 </svg>
                 <h4 class="font-bold ml-2 text-slate-800">Stack</h4>
               </div>
-              <p class="font-medium text-slate-700 text-lg">Vue, tailwind css, Supabase</p>
+              <p class="font-medium text-slate-700 text-lg">{{ d.stack }}</p>
             </div>
             <div class="info-box p-5 rounded-lg bg-gray-100 ">
               <div class="flex items-center mb-2">
@@ -116,7 +116,7 @@
 
                 <h4 class="font-bold ml-2 text-slate-800">Link</h4>
               </div>
-              <p class="font-medium text-slate-700 text-lg">itclub-smkn4.netlify.app</p>
+              <p class="font-medium text-slate-700 text-lg">{{ d.link }}</p>
             </div>
           
           </div>
@@ -129,7 +129,22 @@
 </template>
 
 <script setup>
-
+const route = useRoute()
+const supabase = useSupabaseAuthClient()
+const datas = ref([])
+const loading = ref(true)
+const getDatas = async ()=>{
+  loading.value = true
+  const {data,error} = await supabase.from("project").select()
+  .order("id",{ascending:false})
+  .eq("id",route.params.id)
+  datas.value = data
+  console.log(data)
+  // loading.value = false
+}
+onMounted(()=>{
+  getDatas()
+})
 </script>
 <style >
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
