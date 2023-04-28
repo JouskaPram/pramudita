@@ -47,7 +47,7 @@
     @apply text-lg sm:text-xl font-bold tracking-tight;
   }
   .form-control {
-    @apply bg-gray-100  rounded-lg border  focus:outline-none focus:border-gray-400 text-base px-4 py-2 w-full;
+    @apply bg-gray-100  rounded-lg border  focus:outline-none focus:border-gray-400 text-base px-4 py-2 w-full text-slate-800;
   }
   .btn {
     @apply rounded-lg;

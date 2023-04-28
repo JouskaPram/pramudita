@@ -1,5 +1,5 @@
 <template>
-  
+  <p v-if="loading" class="font-semibold text-center text-2xl text-slate-700 italic">data sedang dimuat</p>   
     <div class="group portfolio flex flex-wrap mb-16 align-middle hover:no-underline focus:no-underline" v-for="d in datas" :key="d.id">
     <!-- di gunain di page project -->
     <div class="w-full md:w-6/12 relative h-52 md:h-96" >
@@ -41,10 +41,13 @@
 <script setup>
 const supabase = useSupabaseAuthClient()
 const datas = ref([])
+const loading = ref(true)
 const getDatas = async ()=>{
+  loading.value = true
   const {data,error} = await supabase.from("project").select()
   .order("id",{ascending:false})
   datas.value = data
+  loading.value = false
 }
 onMounted(()=>{
   getDatas()
