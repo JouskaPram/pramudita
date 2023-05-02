@@ -1,5 +1,6 @@
 <template>
   
+  <p v-if="loading" class="font-semibold text-center text-2xl text-slate-700">data sedang dimuat</p>   
   <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8" >  
     <p v-if="loading" class="font-semibold text-center text-2xl text-slate-700">data sedang dimuat</p>   
     <article class="bg-white/5 border  p-5 rounded-3xl" v-for="d in datas" :key="d.id">

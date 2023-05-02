@@ -7,6 +7,7 @@ const addEmail = async ()=>{
   .insert({
     email:email.value
   })
+  alert("berhasil mengirim email")
   if(error){
     console.log(error)
   }
