@@ -17,9 +17,10 @@ const addEmail = async ()=>{
     <footer class="pt-16 pb-8 border-t dark:border-gray-600  sm:mb-0">
       <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-10 gap-10">
         <div class="col-span-1 md:col-span-4">
+          <!-- <img src="https://phkbtvdsbhjnnytanhqu.supabase.co/storage/v1/object/public/projects/1669049836830.jpg" alt="" class="w-24 h-24  rounded-full"> -->
           <h5 class="text-slate-700 font-semibold">Who Am I?</h5>
           <p class="my-4 block sm:w-10/12 text-slate-500">
-            I’m Pramudita Ahmad, a Full Stack Web Developer, I code just for fun & i love it
+            I’m <span class="font-semibold text-blue-500">Pramudita Ahmad</span>, a Full Stack Web Developer, I code just for fun & i love it
           </p>
           <!-- <social-buttons> </social-buttons>    -->
         </div>

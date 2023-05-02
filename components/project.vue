@@ -1,14 +1,14 @@
 <template>
   
   <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8" >  
+    <p v-if="loading" class="font-semibold text-center text-2xl text-slate-700">data sedang dimuat</p>   
     <article class="bg-white/5 border  p-5 rounded-3xl" v-for="d in datas" :key="d.id">
-      <p v-if="loading" class="font-semibold text-center text-2xl text-slate-700">data sedang dimuat</p>   
           <img
             :src="d.img"
             alt="gamar"
-            class="rounded-2xl mb-5 shadow-xl w-full h-[225px] hover:scale-105 duration-300"
+            class="rounded-2xl mb-5 shadow-xl w-full h-[200px] hover:scale-105 duration-300"
             width="400px"
-            height="300px "
+            height="150px "
             loading="lazy"
           >
           <!-- Blog Meta -->
@@ -41,7 +41,7 @@ const getDatas = async ()=>{
   const {data,error} = await supabase.from("project").select()
   .order("id",{ascending:false})
   datas.value = data
-  // loading.value = false
+  loading.value = false
 }
 onMounted(()=>{
   getDatas()
