@@ -102,7 +102,7 @@
               </a>
               <!-- Instagram -->
               <a
-                href="https://www.instagram.com/sun_flower281004/?hl=en"
+                href="https://www.instagram.com/suhn_flou_er/?hl=en"
                 target="_blank"
                 class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-500 text-slate-500 hover:border-blue-400 hover:bg-blue-400 hover:text-white"
               >
