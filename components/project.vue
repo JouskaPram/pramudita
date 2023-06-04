@@ -1,8 +1,7 @@
 <template>
   <p v-if="loading" class="font-semibold text-center text-2xl text-slate-700">data sedang dimuat</p>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8">
-    <p v-if="loading" class="font-semibold text-center text-2xl text-slate-700">data sedang dimuat</p>
-    <article class="bg-white/5 border  p-5 rounded-3xl" v-for="d in datas" :key="d.id">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8 ">
+    <article class="bg-white/5 border  p-5 rounded-3xl " v-for="d in datas" :key="d.id" ref="project">
       <img :src="d.img" alt="gamar" class="rounded-2xl mb-5 shadow-xl w-full h-[200px] hover:scale-105 duration-300"
         width="400px" height="150px " loading="lazy">
       <!-- Blog Meta -->
@@ -29,6 +28,8 @@
   </div>
 </template>
 <script setup>
+import gsap from 'gsap'
+const project = ref(null)
 const supabase = useSupabaseAuthClient()
 const datas = ref([])
 const loading = ref(true)
@@ -39,9 +40,22 @@ const getDatas = async () => {
     .range(0, 5)
     .limit(6)
   datas.value = data
+
   loading.value = false
+  gsap.fromTo(
+    project.value,
+    { opacity: 0 },
+    { opacity: 1, duration: 4, ease: 'power2.out' }
+  )
 }
 onMounted(() => {
   getDatas()
+
+
+
+
+
+
+
 })
 </script>
