@@ -1,9 +1,12 @@
 <template>
-  <p v-if="loading" class="font-semibold text-center text-2xl text-slate-700">data sedang dimuat</p>
+  <p v-if="loading" class="custom-loader m-auto text-center"></p>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8 ">
     <article class="bg-white/5 border  p-5 rounded-3xl " v-for="d in datas" :key="d.id" ref="project">
-      <img :src="d.img" alt="gamar" class="rounded-2xl mb-5 shadow-xl w-full h-[200px] hover:scale-105 duration-300"
-        width="400px" height="150px " loading="lazy">
+      <NuxtLink :to="`/project/` + d.id">
+
+        <img :src="d.img" alt="gamar" class="rounded-2xl mb-5 shadow-xl w-full h-[200px] hover:scale-105 duration-300"
+          width="400px" height="150px " loading="lazy">
+      </NuxtLink>
       <!-- Blog Meta -->
       <div class="inline-flex items-center mb-2">
         <div class="inline-flex items-center">
@@ -17,7 +20,7 @@
         </div>
 
       </div>
-      <!-- ./ Blog Meta  -->
+
       <NuxtLink :to="`/project/` + d.id" class="font-semibold text-slate-700">
         <h3 class="text-lg text-slate-700 leading-tight font-bold">
           {{ d.nama }}
@@ -25,6 +28,7 @@
       </NuxtLink>
 
     </article>
+
   </div>
 </template>
 <script setup>
@@ -59,3 +63,35 @@ onMounted(() => {
 
 })
 </script>
+<style>
+.custom-loader {
+  width: 45px;
+  height: 40px;
+  --c: linear-gradient(#3b82f6 0 0);
+  background:
+    var(--c) 0% 100%,
+    var(--c) 50% 100%,
+    var(--c) 100% 100%;
+  background-size: 9px 100%;
+  background-repeat: no-repeat;
+  animation: b2 1s infinite linear;
+}
+
+@keyframes b2 {
+  20% {
+    background-size: 9px 60%, 9px 100%, 9px 100%
+  }
+
+  40% {
+    background-size: 9px 80%, 9px 60%, 9px 100%
+  }
+
+  60% {
+    background-size: 9px 100%, 9px 80%, 9px 60%
+  }
+
+  80% {
+    background-size: 9px 100%, 9px 100%, 9px 80%
+  }
+}
+</style>

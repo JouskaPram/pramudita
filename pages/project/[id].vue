@@ -1,8 +1,8 @@
 <template>
-  <div id="main">
+  <div id="main" class="min-h-screen">
     <Navbar />
-    <section class="pt-24 pb-10">
-      <p v-if="loading" class="font-semibold text-center text-2xl text-slate-700 italic h-screen">data sedang dimuat</p>
+    <section class="pt-24 pb-10 ">
+      <div v-if="loading" class="custom-loader m-auto text-center "></div>
       <div class="container" v-for="d in datas" :key="d.id">
 
         <div class="group portfolio flex flex-wrap mb-16 align-middle hover:no-underline focus:no-underline">
@@ -120,5 +120,36 @@ onMounted(() => {
   background-size: 100px;
   top: 0;
   left: 0;
+}
+
+.custom-loader {
+  width: 45px;
+  height: 40px;
+  --c: linear-gradient(#3b82f6 0 0);
+  background:
+    var(--c) 0% 100%,
+    var(--c) 50% 100%,
+    var(--c) 100% 100%;
+  background-size: 9px 100%;
+  background-repeat: no-repeat;
+  animation: b2 1s infinite linear;
+}
+
+@keyframes b2 {
+  20% {
+    background-size: 9px 60%, 9px 100%, 9px 100%
+  }
+
+  40% {
+    background-size: 9px 80%, 9px 60%, 9px 100%
+  }
+
+  60% {
+    background-size: 9px 100%, 9px 80%, 9px 60%
+  }
+
+  80% {
+    background-size: 9px 100%, 9px 100%, 9px 80%
+  }
 }
 </style>
