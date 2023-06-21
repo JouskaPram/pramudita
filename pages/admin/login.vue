@@ -5,7 +5,7 @@
             class=" w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
             <div class="py-4 mb-2">
                 <h5 class="text-xl font-medium text-gray-900 dark:text-white">Sign in to PramuditaCMS</h5>
-
+                <h3 v-if="wrong">lu salah</h3>
             </div>
             <form method="post" @submit.prevent="login" class="space-y-4 md:space-y-6 pb-4 ">
                 <label for="email" class="block md:mb-2  text-sm font-medium text-gray-900 dark:text-white">Your
@@ -31,22 +31,25 @@ const supabase = useSupabaseAuthClient()
 const user = useSupabaseUser()
 const email = ref()
 const password = ref()
+const wrong = ref(false)
 console.log(user)
 const login = async () => {
-    const { data, error } = await supabase.auth.signInWithPassword({
+    wrong.value = false
+    const { user, data, error } = await supabase.auth.signInWithPassword({
         email: email.value,
         password: password.value
     })
     console.log(data)
-
     if (error) {
-        alert("lu bukan pram sir_-")
-        console.log(error)
+        wrong.value = true
     }
-    if (data) {
-        alert("yeay kamu pram^^")
+    if (!error) {
+
         navigateTo("/admin")
     }
+
+
+
 }
 </script>
 
