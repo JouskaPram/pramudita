@@ -9,14 +9,16 @@
       <div class=" px-4">
         <h2 class="mb-3 text-lg font-bold uppercase text-blue-500">What I Can Do</h2>
         <p class="text-base font-medium text-slate-500 lg:text-lg  mb-4">
-          I'm just someone who likes to code, and I'm pretty good at making web design and web apps, <br />
-          different from mobile, I'm just getting into mobile programming. Beside that i am also a Digital Advertising
-        </p>
+         saya memiliki  kemampuan di fullstack developer dan machine learning <br />
+          terbiasa menerapkan cleancode dan menerapkan prinsip SOLID. untuk bahasa pemrograman yang biasa saya pakai 
+          adalah golang,javascript,python dan php dengan framework dalam bahasa pemrograman tersebut.
+          </p>
       </div>
       <div class="px-4 mt-8">
         <div class="grid gap-10 grid-cols-1 md:grid-cols-3">
-          <serviceCard title="Website Design"
-            description="I can create beautiful web views using css framework I can also create user-friendly UI/UX"><svg
+          <serviceCard title="Front End Web"
+            description="Saya dapat membuat web dengan desain yang sesuai dari UI/UX dengan menggunakan tailwind css untuk styling. lalu
+            untuk consume API saya menggunakan front end framework VUE/NUXT"><svg
               id="bold" class="h-16" enable-background="new 0 0 32 32" viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -37,8 +39,10 @@
                 fill="#26c6da" />
             </svg>
           </serviceCard>
-          <serviceCard title="Progressive Webapp"
-            description="I can create a system with the web starting from a system for a school company etc. I am good in front end and backend handling.">
+          <serviceCard title="Backend Dev"
+            description="
+  Saya menggunakan Golang, PHP, dan JavaScript sebagai bahasa pemrograman, dengan keahlian dalam database SQL, NoSQL, dan penggunaan Redis untuk caching efisien. Memiliki pemahaman yang kuat tentang konsep backend, seperti queue dan security, saya fokus pada pembangunan solusi yang andal, efisien, dan aman.
+">
             <svg id="bold" class="h-16" enable-background="new 0 0 32 32" viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -52,8 +56,9 @@
                 fill="#fc573b" />
             </svg>
           </serviceCard>
-          <serviceCard title="Digital Advertising"
-            description="Apart from programming, I can also handle ads like Google ads, Facebook ads, Marketplace etc. I also have a google ads certificate">
+          <serviceCard title="Mobile Dev"
+            description="
+Saya menguasai potong desain UI/UX dan memiliki pengalaman luas dalam menggunakan Flutter untuk aplikasi mobile lintas platform. Keterampilan tambahan dalam pengembangan aplikasi hybrid menggunakan Ionic memungkinkan saya untuk menciptakan pengalaman pengguna yang lancar dan aplikasi responsif di berbagai platform.">
             <svg id="bold" class="h-16" enable-background="new 0 0 32 32" viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -77,7 +82,7 @@
     <div class="section container pt-10 pb-10">
       <div class="px-4">
         <h2 class="section-heading mb-4 text-center font-bold text-2xl text-blue-500 ">My Project</h2>
-        <p class="text-center mb-4 text-gray-400 text-md">Take a look at some of my project.</p>
+        <p class="text-center mb-4 text-gray-400 text-md">Lihat project saya sebelumnya^^</p>
         <project />
         <div class="mt-12 text-center">
           <NuxtLink to="/project"
@@ -97,11 +102,10 @@
     <div class="pt-16 px-5">
       <div class="cotainer sm:mt-14 mx-auto max-w-2xl text-center">
         <h1 class="leading-tight text-slate-700 text-4xl md:text-5xl mb-5">
-          Contact Me here 🚀
+          Kontak Saya Disini 🚀
         </h1>
         <p class="text-sm text-slate-400 md:text-base md:px-12">
-          if you want to interact with me you can use this contact, for whatever it is without exception.
-        </p>
+          Jika kamu ingin berinteraksi dengan saya, apapun yang akan dibahas^^ </p>
       </div>
     </div>
     <section class="container py-10">

@@ -11,14 +11,14 @@
               </span>
             </h1>
             <h2 class="mb-5 text-lg font-medium text-slate-900  lg:text-2xl">
-              Web Developer & <span class="font-dark"> Digital Advertising</span>
+              FullStack Developer & <span class="font-dark">ML engineer</span>
             </h2>
             <p class="mb-5 font-medium leading-relaxed text-slate-400">
               I code just for fun & i love it
             </p>
             <NuxtLink to="/project"
               class="rounded-full bg-blue-500 py-3 px-8 text-base font-semibold text-white transition duration-300 hover:bg-blue-400 hover:shadow-lg">
-              My Fun Project
+              My  Project
             </NuxtLink>
           </div>
           <div ref="anime" class="w-full self-end px-4 lg:w-1/2 opacity-0">
@@ -47,10 +47,9 @@
               Pramudita
             </h2>
             <p class="max-w-xl text-base font-medium text-slate-500 lg:text-lg my-element">
-              Hi, I'm Pramudita Ahmad from Indonesia, I like code, have good knowledge on the frontend such as web design,
-              consume api, etc. sometimes i use cloud database for my project like a firebase/supabase. but i am good to
-              make Rest Api use backend tools like a nodejs/laravel. except that i really like a digital marketing like a
-              handling ads use google ads.
+             Halo, Saya Pramudita Ahmad Mahasiswa Sistem Informasi Universitas Siliwangi Tasikmalaya. Saya Berusia 19 tahun dan sudah terjun kedalam dunia programming selama 3 tahun.
+             Saya memiliki  problem solving yang bagus dalam menghadapi sebuah permasalahan. Saya juga memiliki skill dalam bidang web development, mobile development, dan machine learning.
+
             </p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
@@ -58,7 +57,7 @@
               Sosial media
             </h3>
             <p class="mb-6 text-base font-medium text-slate-500 lg:text-lg">
-              If you want to know more about me, you can follow the social media below.
+             Jika Kamu Ingin mengenal saya lebih dekat, kamu bisa menghubungi saya melalui sosial media yang saya miliki.
             </p>
             <SocialMedia />
           </div>
