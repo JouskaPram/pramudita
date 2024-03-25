@@ -5,7 +5,7 @@
         <div class="flex flex-wrap">
           <div ref="me" class="w-full self-center px-4 lg:w-1/2 animated-ele opacity-0">
             <h1 class="text-base font-semibold text-blue-500 md:text-xl">
-              Hello Everyone ✌,
+              Hello Everyone,
               I'm
               <span class="mt-1 block text-3xl font-bold text-slate-900  lg:text-4xl">Pramudita
               </span>
@@ -23,13 +23,9 @@
           </div>
           <div ref="anime" class="w-full self-end px-4 lg:w-1/2 opacity-0">
             <div class="relative mt-10 lg:right-0 lg:mt-0">
-              <img src="../public/c.png" alt="" class="relative z-10 mx-auto max-w-full" />
+              <img src="../public/pramudita.png" alt="" class="relative z-10 mx-auto max-w-full" />
               <span class="absolute -bottom-8 left-1/2 -translate-x-1/2 md:scale-x-125">
-                <svg width="300" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="rgb(59 130 246)"
-                    d="M27.5,-39.4C36.6,-36.9,45.7,-30.9,47.4,-22.9C49.1,-14.8,43.5,-4.7,40.1,4.5C36.8,13.6,35.7,21.8,33.1,33.6C30.5,45.5,26.5,61,16.6,70C6.8,79,-8.9,81.4,-18.7,73.9C-28.4,66.3,-32.2,48.7,-39.9,36.5C-47.7,24.2,-59.4,17.2,-65.1,6.7C-70.8,-3.9,-70.6,-18,-64.2,-28.2C-57.8,-38.5,-45.4,-44.9,-33.7,-46.2C-22,-47.6,-11,-43.9,-0.9,-42.5C9.2,-41.1,18.4,-42,27.5,-39.4Z"
-                    transform="translate(100 100)" />
-                </svg>
+                
               </span>
             </div>
           </div>

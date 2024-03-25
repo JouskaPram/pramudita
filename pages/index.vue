@@ -97,9 +97,15 @@ Saya menguasai potong desain UI/UX dan memiliki pengalaman luas dalam menggunaka
       </div>
     </div>
     <!-- testi card -->
-
+    <div class="section container pt-16">
+      <div class="px-4">
+        <h2 class="section-heading mb-4 text-center font-bold text-2xl text-blue-500 ">My Skill</h2>
+        <p class="text-center mb-4 text-gray-400 text-md">Seberapa Mahir Saya Dalam Tools Yang Di Gunakan?</p>
+        <Myskill />
+        </div>
+      </div>
     <!-- contact -->
-    <div class="pt-16 px-5">
+    <div class="pt-10 px-5">
       <div class="cotainer sm:mt-14 mx-auto max-w-2xl text-center">
         <h1 class="leading-tight text-slate-700 text-4xl md:text-5xl mb-5">
           Kontak Saya Disini 🚀
