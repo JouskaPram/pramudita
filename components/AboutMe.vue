@@ -11,7 +11,7 @@
               </span>
             </h1>
             <h2 class="mb-5 text-lg font-medium text-slate-900  lg:text-2xl">
-              FullStack Developer & <span class="font-dark">ML engineer</span>
+              Software Engineer & <span class="font-dark"> Music Lover</span>
             </h2>
             <p class="mb-5 font-medium leading-relaxed text-slate-400">
               I code just for fun & i love it
@@ -20,6 +20,9 @@
               class="rounded-full bg-blue-500 py-3 px-8 text-base font-semibold text-white transition duration-300 hover:bg-blue-400 hover:shadow-lg">
               My  Project
             </NuxtLink>
+            <a href="http://github.com/pramahmad" class="md:inline hidden ml-4 py-3 rounded-full px-8 text-base bg-black  text-white transition duration-300 hover:bg-transparent hover:border hover:border-black hover:text-black">
+              Github Account
+            </a>
           </div>
           <div ref="anime" class="w-full self-end px-4 lg:w-1/2 opacity-0">
             <div class="relative mt-10 lg:right-0 lg:mt-0">
