@@ -5,7 +5,7 @@
           <!-- Avatar (Kiri) dengan Bubble Chat -->
           <div class="flex justify-end   lg:justify-end items-betjustify-end   relative">
             <!-- Bubble Chat -->
-            <div class="absolute -left-4 lg:-left-8 top-14 bg-gray-800 rounded-lg p-4 shadow-lg md:max-w-[230px] max-w-[170px]">
+            <div class="absolute -left-4 lg:-left-8 top-14 bg-gray-800 rounded-lg p-4 shadow-lg md:max-w-[230px] max-w-[125px]">
               <p class="text-sm">"Don't code too much, sometimes you have to listen to music!" 🎶</p>
               <div class="absolute -right-2 top-4 w-4 h-4 bg-gray-800 transform rotate-45"></div>
             </div>
