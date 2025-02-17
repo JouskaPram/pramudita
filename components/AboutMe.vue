@@ -16,10 +16,11 @@
             <p class="mb-5 font-medium leading-relaxed text-slate-400">
               I code just for fun & i love it
             </p>
-            <NuxtLink to="/project"
+            <a href="resume.pdf"
+            target="_blank"
               class="rounded-full bg-blue-500 py-3 px-8 text-base font-semibold text-white transition duration-300 hover:bg-blue-400 hover:shadow-lg">
-              My  Project
-            </NuxtLink>
+              Resume  
+          </a>
             <a href="http://github.com/pramahmad" class="md:inline hidden ml-4 py-3 rounded-full px-8 text-base bg-black  text-white transition duration-300 hover:bg-transparent hover:border hover:border-black hover:text-black">
               Github Account
             </a>

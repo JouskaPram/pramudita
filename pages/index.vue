@@ -104,6 +104,16 @@ Saya menguasai potong desain UI/UX dan memiliki pengalaman luas dalam menggunaka
         <Myskill />
         </div>
       </div>
+
+      <div class="section container pt-16">
+      <div class="px-4">
+        <h2 class="section-heading mb-4 text-center font-bold text-2xl text-blue-500 ">My Favorite Music</h2>
+        <p class="text-center mb-4 text-gray-400 text-md">
+          I love music, here are some of my favorite songs.
+        </p>
+        <Spotify />
+        </div>
+      </div>
     <!-- contact -->
     <div class="pt-10 px-5">
       <div class="cotainer sm:mt-14 mx-auto max-w-2xl text-center">
