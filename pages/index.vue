@@ -114,7 +114,7 @@
     <div class="pt-10 px-5">
       <div class="cotainer sm:mt-14 mx-auto max-w-2xl text-center">
         <h1 class="leading-tight text-slate-700 text-4xl md:text-5xl mb-5">
-          Kontak Saya Disini 🚀
+            Contact Me 🚀
         </h1>
         <p class="text-sm text-slate-400 md:text-base md:px-12">
           If you want some cake from me lets talk a while^^ </p>
