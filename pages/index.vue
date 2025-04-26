@@ -78,7 +78,7 @@
     <div class="section container pt-10 pb-10">
       <div class="px-4">
         <h2 class="section-heading mb-4 text-center font-bold text-2xl text-blue-500 ">My Project</h2>
-        <p class="text-center mb-4 text-gray-400 text-md">Lihat project saya sebelumnya^^</p>
+        <p class="text-center mb-4 text-gray-400 text-md">Lets See My Project^^</p>
         <project />
         <div class="mt-12 text-center">
           <NuxtLink to="/project"
@@ -96,7 +96,7 @@
     <div class="section container pt-16">
       <div class="px-4">
         <h2 class="section-heading mb-4 text-center font-bold text-2xl text-blue-500 ">My Skill</h2>
-        <p class="text-center mb-4 text-gray-400 text-md">Seberapa Mahir Saya Dalam Tools Yang Di Gunakan?</p>
+        <p class="text-center mb-4 text-gray-400 text-md">Whats Tools i use for daily?</p>
         <Myskill />
         </div>
       </div>
@@ -117,7 +117,7 @@
           Kontak Saya Disini 🚀
         </h1>
         <p class="text-sm text-slate-400 md:text-base md:px-12">
-          Jika kamu ingin berinteraksi dengan saya, apapun yang akan dibahas^^ </p>
+          If you want some cake from me lets talk a while^^ </p>
       </div>
     </div>
     <section class="container py-10">
