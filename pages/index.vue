@@ -7,17 +7,16 @@
     <!-- endabout me -->
     <div class="services section pt-10 container pb-10 ">
   <div class=" px-4">
-    <h2 class="mb-3 text-lg font-bold uppercase text-blue-500">What I Can Do</h2>
+    <h2 class="mb-3 text-lg font-bold uppercase text-blue-500">What I Passionate</h2>
     <p class="text-base font-medium text-slate-500 lg:text-lg mb-4">
-      I have skills in fullstack development and machine learning. <br />
-      I'm accustomed to implementing clean code principles and best practices. The programming languages 
-      I regularly use are Golang, JavaScript, Python, and PHP along with their respective frameworks.
+      I have interests in operating system programming, native desktop development, machine learning, Linux, and fullstack development. <br />
+      I enjoy working with data structures and algorithms, database design, query optimization, and building efficient, scalable systems while following clean code principles and best practices.
     </p>
   </div>
   <div class="px-4 mt-8">
     <div class="grid gap-10 grid-cols-1 md:grid-cols-3">
-      <serviceCard title="Front End Web"
-        description="I can create websites with designs matching UI/UX specifications using Tailwind CSS for styling. For API consumption, I utilize front-end frameworks like Vue/Nuxt, and I'm proficient with JavaScript frameworks to build responsive and interactive interfaces.">
+      <serviceCard title="OS Programming"
+        description="I focus on operating system programming, including native desktop development and Linux-based systems. I enjoy building low-level, efficient, and reliable software close to the system layer.">
         <svg id="bold" class="h-16" enable-background="new 0 0 32 32" viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg">
           <path
@@ -38,8 +37,8 @@
             fill="#26c6da" />
         </svg>
       </serviceCard>
-      <serviceCard title="Backend Dev"
-        description="I use Golang, PHP, and JavaScript as primary programming languages, with expertise in SQL and NoSQL databases, and Redis for efficient caching. My backend experience includes query optimization, security implementation, Docker containerization, message brokers, and server management. I focus on building reliable, efficient, and secure solutions.">
+      <serviceCard title="Machine Learning"
+        description="I am interested in machine learning for solving real-world problems, from data preparation to model development and evaluation. I focus on practical implementations that can be integrated into scalable applications.">
         <svg id="bold" class="h-16" enable-background="new 0 0 32 32" viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg">
           <path
@@ -53,8 +52,8 @@
             fill="#fc573b" />
         </svg>
       </serviceCard>
-      <serviceCard title="Mobile Dev"
-        description="I excel at implementing UI/UX designs and have extensive experience using Flutter for cross-platform mobile applications. My additional skills in hybrid app development with Ionic enable me to create smooth user experiences and responsive applications across various platforms.">
+      <serviceCard title="Fullstack Development"
+        description="I build fullstack solutions that include frontend, backend, and mobile development, supported by strong fundamentals in data structures and algorithms (DSA) and database design for efficient and scalable systems.">
         <svg id="bold" class="h-16" enable-background="new 0 0 32 32" viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg">
           <path
@@ -94,19 +93,37 @@
     </div>
     <!-- testi card -->
     <div class="section container pt-16">
-      <div class="px-4">
+      <!-- <div class="px-4">
         <h2 class="section-heading mb-4 text-center font-bold text-2xl text-blue-500 ">My Skill</h2>
         <p class="text-center mb-4 text-gray-400 text-md">Whats Tools i use for daily?</p>
         <Myskill />
+      </div> -->
+    </div>
+
+    <div class="section container pt-16 pb-10">
+      <div class="px-4">
+        <h2 class="section-heading mb-4 text-center font-bold text-2xl text-blue-500 ">My Blog</h2>
+        <p class="text-center mb-6 text-gray-400 text-md">Latest posts from Medium</p>
+        <Myblog />
+        <div class="mt-12 text-center">
+          <NuxtLink to="/blog"
+            class="text-gray-800 font-semibold border border-gray-800 py-2 px-5 hover:px-6 rounded-full inline-flex items-center group transform hover:text-primary hover:-translate-y-1 duration-200">
+            View All Blog
+            <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-2 duration-200" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </NuxtLink>
         </div>
       </div>
+    </div>
 
       <div class="section container pt-16">
       <div class="px-4">
         <h2 class="section-heading mb-4 text-center font-bold text-2xl text-blue-500 ">My Favorite Music</h2>
-        <p class="text-center mb-4 text-gray-400 text-md">
+        <!-- <p class="text-center mb-4 text-gray-400 text-md">
           I love music, here are some of my favorite songs.
-        </p>
+        </p> -->
         <Spotify />
         </div>
       </div>

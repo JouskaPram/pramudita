@@ -6,10 +6,16 @@ onMounted(() => {
 })
 </script>
 <template>
-    <div>
+    <div class="app-shell">
         <slot />
     </div>
 </template>
 
 
-<style lang="scss" scoped></style>
+<style scoped>
+.app-shell {
+    background-image: url('/noise.webp');
+    background-repeat: repeat;
+    background-size: 100px;
+}
+</style>
